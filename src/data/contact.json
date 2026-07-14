@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "label": "Email",
+    "value": "nexviapcbdesign@gmail.com",
+    "icon": "FaEnvelope",
+    "href": "mailto:nexviapcbdesign@gmail.com",
+    "type": "link"
+  },
+  {
+    "id": 2,
+    "label": "WhatsApp",
+    "value": "+92-327-2122522",
+    "icon": "FaWhatsapp",
+    "href": "https://wa.me/923272122522",
+    "type": "link"
+  },
+  {
+    "id": 3,
+    "label": "Location",
+    "value": "NED University of Engineering & Technology, Karachi, Pakistan",
+    "icon": "FaMapMarkerAlt",
+    "href": null,
+    "type": "text"
+  }
+]

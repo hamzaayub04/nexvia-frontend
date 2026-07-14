@@ -1,0 +1,27 @@
+[
+  {
+    "step": "01",
+    "title": "Requirement",
+    "description": "We define goals, budget, constraints, and expected usage so the architecture is chosen correctly."
+  },
+  {
+    "step": "02",
+    "title": "Design",
+    "description": "We build schematic and PCB layout with care for signal integrity and power delivery."
+  },
+  {
+    "step": "03",
+    "title": "Review",
+    "description": "We check manufacturing issues, routing cleanliness, and improvement opportunities."
+  },
+  {
+    "step": "04",
+    "title": "Production",
+    "description": "We prepare files for fabrication and assembly to move into manufacturing with less friction."
+  },
+  {
+    "step": "05",
+    "title": "Delivery",
+    "description": "We deliver final outputs, supporting files, and handoff details for build or scaling."
+  }
+]

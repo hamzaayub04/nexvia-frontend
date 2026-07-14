@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "tag": "Student-friendly",
+    "icon": "FaGraduationCap",
+    "title": "Support that makes projects less stressful",
+    "description": "We guide students with simple communication, clear milestones, and layouts that are easy to build, test, and explain."
+  },
+  {
+    "id": 2,
+    "tag": "Cost-effective",
+    "icon": "FaTags",
+    "title": "Thoughtful design to protect budgets",
+    "description": "Board decisions are made with production cost, material efficiency, and future changes in mind, so you spend smarter."
+  },
+  {
+    "id": 3,
+    "tag": "Industry-ready",
+    "icon": "FaIndustry",
+    "title": "Clean outputs for real manufacturing",
+    "description": "From DFM-aware routing to assembly prep, we design with the final factory process in mind, not just the screen."
+  }
+]

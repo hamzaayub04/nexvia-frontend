@@ -1,0 +1,20 @@
+{
+  "desktop": [
+    { "label": "Home", "path": "/", "hash": "#home" },
+    { "label": "Get a Quote", "path": "/quote", "hash": "#quote" },
+    { "label": "Why Us", "path": "/", "hash": "#why-us" },
+    { "label": "Services", "path": "/services", "hash": "#services" },
+    { "label": "Projects", "path": "/projects", "hash": "#projects" },
+    { "label": "Contact", "path": "/contact", "hash": "#contact" },
+    { "label": "FAQs", "path": "/", "hash": "#faqs" }
+  ],
+  "mobile": [
+    { "label": "Home", "path": "/", "hash": "#home" },
+    { "label": "Get a Quote", "path": "/quote", "hash": "#quote" },
+    { "label": "Why Us", "path": "/", "hash": "#why-us" },
+    { "label": "Services", "path": "/services", "hash": "#services" },
+    { "label": "Projects", "path": "/projects", "hash": "#projects" },
+    { "label": "Contact", "path": "/contact", "hash": "#contact" },
+    { "label": "FAQs", "path": "/", "hash": "#faqs" }
+  ]
+}

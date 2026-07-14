@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "icon": "FaPencilRuler",
+    "title": "PCB Design",
+    "description": "Schematic capture, component placement, routing optimization, and board formatting for clean performance."
+  },
+  {
+    "id": 2,
+    "icon": "FaCogs",
+    "title": "Manufacturing",
+    "description": "Fabrication-ready deliverables and board output preparation aligned with practical production constraints."
+  },
+  {
+    "id": 3,
+    "icon": "FaLayerGroup",
+    "title": "Assembly",
+    "description": "Assembly support with BOM alignment, component planning, and small-batch execution for fast prototyping."
+  },
+  {
+    "id": 4,
+    "icon": "FaUserTie",
+    "title": "Consultancy",
+    "description": "Advice for students, startups, and hardware teams on architecture, layout, and manufacturability decisions."
+  }
+]

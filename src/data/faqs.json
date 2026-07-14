@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "question": "What kind of projects do you handle?",
+    "answer": "We handle student boards, startup prototypes, small production runs, control systems, and custom PCB design consulting."
+  },
+  {
+    "id": 2,
+    "question": "Can you work with Gerber and KiCad files?",
+    "answer": "Yes. The quote form accepts project files such as Gerber and KiCad so you can share the full design context."
+  },
+  {
+    "id": 3,
+    "question": "Do you support manufacturing and assembly?",
+    "answer": "Yes. Nexvia offers design, manufacturing, assembly, and consultancy so a project can move through the full chain."
+  },
+  {
+    "id": 4,
+    "question": "How long does a typical project take?",
+    "answer": "Turnaround depends on complexity. Simple designs can be ready in a few days; multi-layer boards may take longer. We confirm timelines during the quote process."
+  }
+]

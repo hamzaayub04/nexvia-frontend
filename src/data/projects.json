@@ -1,0 +1,62 @@
+{
+  "arduino-shield": {
+    "id": "arduino-shield",
+    "title": "Arduino Shield",
+    "summary": "Custom Arduino Shield extending standard boards with servo, MOSFET, temperature sensor, and flexible power selection.",
+    "detail": "This custom Arduino Shield is designed to extend the functionality of standard Arduino boards with a clean and compact form factor. The shield features dual servo motor headers (SERVO 1 & SERVO 2), a MOSFET header for driving high-current loads, and a dedicated temperature sensor interface. It includes a flexible power selection system allowing the user to choose between external supply and 15V onboard regulation, along with clearly labeled analog and digital breakout pins. A user LED and power LED provide real-time status indication.",
+    "notes": [
+      "Dual servo motor headers (SERVO 1 & SERVO 2)",
+      "MOSFET header for driving high-current loads",
+      "Flexible power selection: external or 15V onboard regulation",
+      "User LED + power LED for real-time status indication"
+    ],
+    "front": "/images/arduino sheld front.jpeg",
+    "back": "/images/arduino shield back.jpeg",
+    "size": "large"
+  },
+  "atmega328": {
+    "id": "atmega328",
+    "title": "ATmega328 IC Board",
+    "summary": "Standalone ATmega328P-PU board offering a complete Arduino-compatible development platform without a full Arduino board.",
+    "detail": "This standalone ATmega328P-PU microcontroller board offers a complete Arduino-compatible development platform without the need for a full Arduino board. Built around the ATmega328P-PU DIP IC running at 16MHz with a dedicated crystal oscillator and 22pF load capacitors, it features dual LM340H-05 voltage regulators for stable 5V power from a 9V input, a fuse for overcurrent protection, a reset button, and dual servo output headers.",
+    "notes": [
+      "ATmega328P-PU at 16MHz with crystal oscillator & 22pF caps",
+      "Dual LM340H-05 regulators - stable 5V from 9V input",
+      "Fuse for overcurrent protection + reset button",
+      "Port B (PB0-PB5) breakout + dual servo output headers"
+    ],
+    "front": "/images/atmega front.jpeg",
+    "back": "/images/atmega back.jpeg",
+    "size": "normal"
+  },
+  "ac-switch": {
+    "id": "ac-switch",
+    "title": "Automatic AC Switch",
+    "summary": "Intelligent PIR-based AC switching board using Arduino Nano and an onboard HLK-5M05 power module - no external adapter needed.",
+    "detail": "This intelligent Automatic AC Switch PCB uses a PIR223D-S0 passive infrared sensor paired with an Arduino Nano to automatically control AC-powered devices based on motion detection. The board incorporates an HLK-5M05 AC-to-DC power module to derive a clean 5V supply directly from mains, eliminating the need for an external adapter. A BC547B transistor drives an SRD-05VDC relay to switch the AC output.",
+    "notes": [
+      "PIR223D-S0 sensor + Arduino Nano for motion detection",
+      "HLK-5M05 AC-to-DC module - no external adapter needed",
+      "BC547B transistor drives SRD-05VDC relay for AC switching",
+      "1N4007 flyback diode for relay coil protection"
+    ],
+    "front": "/images/automaticswitch front.jpeg",
+    "back": "/images/automatic switch back.jpeg",
+    "size": "normal"
+  },
+  "pressure-sensing": {
+    "id": "pressure-sensing",
+    "title": "Pressure Sensing System",
+    "summary": "Medical-grade multi-point pressure mapping PCB built around an ESP32 module for bed sore prevention and patient monitoring.",
+    "detail": "This advanced Pressure Sensing System PCB is engineered for medical-grade patient monitoring applications, featuring a dense and well-organized layout built around an ESP32 38-pin module as the central processing unit. The board integrates multiple pressure sensor interfaces distributed symmetrically across all four edges of the PCB, enabling real-time multi-point pressure mapping. An MUX (analog multiplexer) handles the numerous sensor inputs efficiently.",
+    "notes": [
+      "ESP32 38-pin module as central processing unit",
+      "Multi-point pressure sensors symmetrically on all four PCB edges",
+      "Analog multiplexer (MUX) for efficient sensor input management",
+      "Wi-Fi & Bluetooth via ESP32 for wireless data transmission"
+    ],
+    "front": "/images/front.jpeg",
+    "back": "/images/back.jpeg",
+    "size": "wide"
+  }
+}
