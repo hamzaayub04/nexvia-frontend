@@ -7,7 +7,6 @@ export const NAV_LINKS = [
   { label: 'Get a Quote', path: '/quote' },
   { label: 'Why Us', path: '/#why-us' },
   { label: 'Services', path: '/services' },
-  { label: 'Projects', path: '/projects' },
   { label: 'Contact', path: '/contact' },
   { label: 'FAQs', path: '/#faqs' },
 ];

@@ -1,5 +1,4 @@
 import { Helmet } from 'react-helmet-async';
-import Leadership from '../components/sections/Leadership';
 import WhyChooseUs from '../components/sections/WhyChooseUs';
 import ScrollReveal from '../components/ui/ScrollReveal';
 
@@ -26,7 +25,6 @@ export default function About() {
         </div>
       </section>
       <WhyChooseUs />
-      <Leadership />
     </>
   );
 }

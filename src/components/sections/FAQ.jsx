@@ -24,7 +24,7 @@ export default function FAQ() {
           {faqs.map((faq) => (
             <div
               key={faq.id}
-              className={`reveal ${openId === faq.id ? 'faq-open' : ''}`}
+              className={`${openId === faq.id ? 'faq-open' : ''}`}
             >
               <details open={openId === faq.id} onClick={(e) => { e.preventDefault(); toggle(faq.id); }}>
                 <summary>{faq.question}</summary>

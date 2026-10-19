@@ -37,9 +37,6 @@ export default function Dashboard() {
                 <a href="/quote" className="btn btn-primary" style={{ justifyContent: 'flex-start' }}>
                   <i className="fas fa-paper-plane"></i> Request a Quote
                 </a>
-                <a href="/projects" className="btn btn-outline" style={{ justifyContent: 'flex-start' }}>
-                  <i className="fas fa-eye"></i> View Projects
-                </a>
               </div>
             </div>
           </div>

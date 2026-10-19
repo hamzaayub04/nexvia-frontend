@@ -20,9 +20,6 @@ export default function Hero() {
               <Link to="/quote" className="btn btn-primary">
                 <i className="fas fa-paper-plane"></i> Get a Quote
               </Link>
-              <Link to="/projects" className="btn btn-outline">
-                See Projects
-              </Link>
             </div>
             <div className="hero-highlights">
               <div className="highlight-item">

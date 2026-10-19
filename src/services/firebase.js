@@ -19,8 +19,24 @@ const auth = getAuth(app);
 const googleProvider = new GoogleAuthProvider();
 
 export const signInWithGoogle = async () => {
-  const result = await signInWithPopup(auth, googleProvider);
-  return result.user;
+  try {
+    const result = await signInWithPopup(auth, googleProvider);
+    return result.user;
+  } catch (err) {
+    // Handle popup-specific errors gracefully so users get clear feedback
+    if (err.code === 'auth/popup-closed-by-user') {
+      throw new Error('Sign-in popup was closed. Please try again.');
+    }
+    if (err.code === 'auth/popup-blocked') {
+      throw new Error(
+        'Sign-in popup was blocked by your browser. Please allow popups for this site and try again.'
+      );
+    }
+    if (err.code === 'auth/cancelled-popup-request') {
+      throw new Error('Sign-in was cancelled. Please try again.');
+    }
+    throw err;
+  }
 };
 
 export const loginWithEmail = async (email, password) => {

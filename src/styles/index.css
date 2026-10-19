@@ -655,16 +655,6 @@ textarea { min-height: 130px; resize: vertical; }
 .step-card h4 { font-size: 1rem; margin-bottom: 8px; }
 .step-card p { color: var(--muted); font-size: 0.85rem; line-height: 1.6; }
 
-/* ── PROJECTS ── */
-#projects { background: var(--bg-card); }
-
-.projects-grid {
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr 0.9fr;
-  gap: 18px;
-  margin-top: 40px;
-}
-
 .project-card {
   background: var(--bg-main);
   border: 1px solid var(--border);
@@ -1188,12 +1178,73 @@ footer {
   to { transform: rotate(360deg); }
 }
 
+/* ── BRAND INTRO (loading screen) ── */
+.brand-intro {
+  position: fixed;
+  inset: 0;
+  background: #000000; /* pure black background for brand intro */
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 100000;
+  font-family: var(--font-head);
+  transition: opacity 0.5s ease;
+}
+
+.brand-intro[data-stage='exit'] {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.brand-word {
+  opacity: 0;
+  transition: opacity 0.45s ease;
+  text-align: center;
+  width: 100%;
+  padding: 0 16px;
+  margin: 0;
+}
+
+.brand-intro[data-stage='nexvia'] .nexvia {
+  opacity: 1;
+}
+
+.brand-intro[data-stage='tagline'] .tagline {
+  opacity: 1;
+}
+
+.brand-word.nexvia {
+  font-size: clamp(1.75rem, 4vw, 2.25rem); /* ~28-36px, subtle and proportionate */
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  line-height: 1.1;
+}
+
+.brand-word.tagline {
+  font-size: clamp(1rem, 3.2vw, 1.75rem);
+  font-weight: 600;
+  letter-spacing: 0.35em;
+  line-height: 1.5;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .brand-intro,
+  .brand-word {
+    transition: none !important;
+  }
+  .brand-intro[data-stage='nexvia'] .nexvia,
+  .brand-intro[data-stage='tagline'] .tagline {
+    opacity: 1;
+  }
+}
+
 /* ── RESPONSIVE ── */
 @media (max-width: 1100px) {
   .services-grid { grid-template-columns: repeat(2, 1fr); }
   .process-track { grid-template-columns: repeat(3, 1fr); }
   .process-track::before { display: none; }
-  .projects-grid { grid-template-columns: 1fr 1fr; }
   .project-card.large { grid-row: auto; }
   .project-card.wide { grid-column: auto; }
   .modal-panel { grid-template-columns: 1fr; }
@@ -1206,7 +1257,6 @@ footer {
   .benefits-grid { grid-template-columns: 1fr; }
   .services-grid { grid-template-columns: 1fr; }
   .process-track { grid-template-columns: 1fr 1fr; }
-  .projects-grid { grid-template-columns: 1fr; }
   .form-grid { grid-template-columns: 1fr; }
   .nav-links { display: none; }
   .hamburger { display: flex; }
